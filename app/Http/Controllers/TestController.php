@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
-public function index($name)
-{
-    return "This is TestController - " . $name;
-}
+    public function index($name)
+    {
+        return "This is TestController - " . $name;
+    }
 }
