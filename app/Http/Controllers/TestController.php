@@ -25,4 +25,30 @@ class TestController extends Controller
     {
         return view('view-share');
     }
+
+    public function home()
+    {
+        $users = [
+            [
+                'id' => 1,
+                'name' => 'Thuc',
+                'number' => 4
+            ], [
+                'id' => 2,
+                'name' => 'Nguyen',
+                'number' => 5
+            ], [
+                'id' => 3,
+                'name' => 'Toan',
+                'number' => 3
+            ]
+        ];
+        $count = 1;
+        return view('home', compact('users', 'count'));
+    }
+
+    public function about()
+    {
+        return view('about');
+    }
 }

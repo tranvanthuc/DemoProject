@@ -31,3 +31,6 @@ Route::get('/demo', function () {
 
 Route::get('/test', 'TestController@index');
 Route::get('/test/view-share', 'TestController@viewShare');
+
+Route::get('home', 'TestController@home');
+Route::get('about', 'TestController@about');
