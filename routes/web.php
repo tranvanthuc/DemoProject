@@ -29,4 +29,5 @@ Route::get('/demo', function () {
     return "Hello World";
 });
 
-Route::get('/test/{name}', 'TestController@index');
+Route::get('/test', 'TestController@index');
+Route::get('/test/view-share', 'TestController@viewShare');
